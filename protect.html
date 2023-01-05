@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>푸딩커비톡</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- 상태 표시 줄 -->
+    <header class="state__header">
+      <div class="state__left--icon">
+        <span>KT</span>
+        <h1 id="time"></h1>
+      </div>
+      <div class="state__right--icon">
+        <span><i class="fas fa-wifi"></i></span>
+        <span><i class="fas fa-signal"></i></span>
+        <span>100%</span>
+        <span><i class="fas fa-battery-full"></i></span>
+      </div>
+    </header>
+
+    <div class="protect__wrapper">
+
+      <div class="protect__title">
+        <h2>암호 입력</h2>
+        <!-- <span>숫자 4자리를 입력해주세요</span> -->
+        <span>초기 비밀번호는 0000 입니다</span>
+      </div>
+
+      <form class="protect__form" action="">
+        <input type="button" class="protect__item" value="1" />
+        <input type="button" class="protect__item" value="2" />
+        <input type="button" class="protect__item" value="3" />
+        <input type="button" class="protect__item" value="4" />
+        <input type="button" class="protect__item" value="5" />
+        <input type="button" class="protect__item" value="6" />
+        <input type="button" class="protect__item" value="7" />
+        <input type="button" class="protect__item" value="8" />
+        <input type="button" class="protect__item" value="9" />
+        <input type="button" id="cancel" class="protect__item" value="취소" />
+        <input type="button" class="protect__item" value="0" />
+        <input type="button" class="protect__item" value="←" />
+      </form>
+
+
+    </div>
+  </div>
+
+  <script src="./js/time.js"></script>
+  <script src="./js/protect.js"></script>
+  <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

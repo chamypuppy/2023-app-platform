@@ -1,0 +1,113 @@
+.friends__profile--wrapper {
+  margin-top: 25px;
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+}
+
+.frds__name__message--wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  line-height: 25px;
+}
+
+.name, .freinds__category--title {
+  font-family: 'NanumSquareBold';
+  font-size: 1.1rem;
+}
+
+.freinds__category--person-number {
+  font-family: 'NanumSquareExtraBold';
+  color: var(--color-pudding);
+}
+
+.my__name {
+  font-size: 1.2rem;
+}
+
+.my__profile--wrapper {
+  text-align: center;
+  line-height: 30px;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+.my__name__message--wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.my__profile {
+  width: 70px;
+  border-radius: 50%;
+  border: 1px solid var(--color-brown);
+}
+
+.friends__profile {
+  width: 60px;
+  border-radius: 50%;
+  border: 1px solid var(--color-brown);
+}
+
+.status__message {
+  color: rgb(133, 127, 127);
+}
+
+.cake__icon {
+  cursor: pointer;
+}
+
+
+/* 누르면 접히는 친구 목록 */
+.active {
+  /* display: none; */
+  visibility: hidden;
+  /* transition: all 0.2s ease-in-out; */
+  /* transition-duration: 2s; */
+}
+
+/* .category__up {
+  position: absolute;
+  top: calc(100% - 728px);
+} */
+
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      /* transform: translate3d(0, 100%, 0); */
+      transform: translate3d(0, 40%, 0);
+  }
+  to {
+      opacity: 1;
+      transform: translateZ(0);
+  }
+}
+
+.category__up {
+  position: absolute;
+  top: calc(100% - 728px);
+  animation: fadeInUp 0.5s;
+}
+
+.active2 {
+  animation: fadeOut 0.6s;
+}
+
+/* 클래스가 사라질 때 적용할 순 없을까? >> 내가 해냈다 했어!!! */
+@keyframes fadeOut {
+  0% {
+      opacity: 0;
+      transform: translateY(-50px);
+      /* transform: translateY(-50%); */
+      
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

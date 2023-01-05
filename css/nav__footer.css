@@ -1,0 +1,18 @@
+.nav__footer {
+  background-color: #333;
+  /* position: fixed; */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.nav__btn {
+  width: 80px;
+  border-radius: 50%;
+  border: 1px solid var(--color-brown);
+}
+
+.nav__btn1 {
+  width: 100px;
+}

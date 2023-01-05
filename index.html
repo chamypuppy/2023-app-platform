@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>푸딩커비톡</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- 상태 표시 줄 -->
+    <header class="state__header">
+      <div class="state__left--icon">
+        <span>KT</span>
+        <h1 id="time"></h1>
+      </div>
+      <div class="state__right--icon">
+        <span><i class="fas fa-wifi"></i></span>
+        <span><i class="fas fa-signal"></i></span>
+        <span>100%</span>
+        <span><i class="fas fa-battery-full"></i></span>
+      </div>
+    </header>
+
+    <!-- 로그인 화면 -->
+    <div class="login__wrapper">
+      <div class="login__title">
+        <h2>푸딩 커비톡을 시작합니다</h2>
+        <span>사용하던 푸딩 커비계정이 있다면<br /> 이메일 또는 전화번호로 로그인해 주세요.</span>
+      </div>
+
+      <form class="login__form" action="protect.html">
+        <input type="text" id="id" placeholder="이메일 또는 전화번호" />
+        <input type="text" id="password" placeholder="비밀번호" />
+        <input type="submit" class="login__button" value="푸딩커비계정 로그인" />
+        <input type="submit" class="login__button" value="새로운 푸딩 커비계정 만들기" />
+        <a href="" class="login__id--lose" target="_blank"><span>푸딩커비계정 또는 비밀번호 찾기</span></a>
+      </form>
+
+    </div>
+
+  </div>
+
+  <script src="./js/time.js"></script>
+  <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

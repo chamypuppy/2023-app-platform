@@ -1,0 +1,22 @@
+.protect__wrapper {
+  text-align: center;
+  line-height: 35px;
+  line-height: 40px;
+  padding-top: 50px;
+}
+
+.protect__wrapper h2 {
+  font-size: 1.6rem;
+}
+
+.protect__wrapper span {
+  /* font-size: 1.6rem; */
+  font-size: 1.1rem;
+}
+
+.protect__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px 100px;
+  margin: 100px 15px;
+}
