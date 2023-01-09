@@ -45,7 +45,7 @@
 
         <!-- HBD -->
         <div class="freinds__category--title">
-          <i class="cake__icon fas fa-birthday-cake"></i>&nbsp 생일인 친구
+          <i id="cake__icon" class="freinds__category--icon fas fa-birthday-cake"></i>&nbsp 생일인 친구
           <span class="freinds__category--person-number">2</span>
         </div>
 
@@ -74,11 +74,32 @@
         <!-- STAR -->
         <div class="star__wrapper">
           <div class="freinds__category--title">
-            <i class="cake__icon fas fa-birthday-cake"></i>&nbsp 즐겨찾는 친구
+            <i id="star__icon" class="freinds__category--icon fas fa-star"></i>&nbsp 즐겨찾는 친구
             <span class="freinds__category--person-number">1</span>
           </div>
 
           <div class="star__friends">
+
+            <!-- STAR 친구 목록 -->
+            <div class="friends__profile--wrapper">
+              <img class="friends__profile" src="imgs/my_profile.png" />
+              <div class="frds__name__message--wrapper">
+                <span class="friends__name name">커비</span>
+                <span class="status__message">하아~이! 커비! 눈 앞에 케이키가 잔뜨윽!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- GROUP -->
+        <div class="group__wrapper">
+          <div class="freinds__category--title">
+            <i id="group__icon" class="freinds__category--icon fas fa-users"></i>&nbsp 그룹
+            <span class="freinds__category--person-number">1</span>
+          </div>
+
+          <div class="group__friends">
 
             <!-- HBD 친구 목록 1 -->
             <div class="friends__profile--wrapper">
@@ -91,8 +112,7 @@
           </div>
         </div>
 
-        <div class="star__friends"></div>
-        <div class="group__friends"></div>
+
         <div class="all__friends"></div>
 
       </div> <!-- 친구 목록 div -->
@@ -108,6 +128,7 @@
 
   <script src="./js/time.js"></script>
   <script src="./js/profile.js"></script>
+  <script src="./js/nav__footer.js"></script>
   <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 </body>
 
