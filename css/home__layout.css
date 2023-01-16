@@ -1,6 +1,15 @@
+.home__wrapper {
+  margin-top: 30px;
+}
+
+.home__title {
+  padding: 0 20px;
+}
+
 .friends__list--wrapper {
   /* display: flex;
   flex-direction: column; */
   margin: 15px 20px;
+  /* padding: 15px 20px; */
   /* text-align: center; */
 }

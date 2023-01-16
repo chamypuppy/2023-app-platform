@@ -9,15 +9,24 @@
   justify-content: center;
   align-items:flex-end;
   /* align-items:center; */
-  
 }
 
 .nav__btn {
   width: 65px;
   border-radius: 50%;
   border: 1px solid var(--color-brown);
+  margin-right: 15px;
 }
 
-.nav__btn1 {
+.nav__btn--first, .nav__btn--last{
+  width: 60px;
+}
+
+
+#center {
   width: 80px;
 }
+
+/* .click__btn {
+  width: 80px;
+} */

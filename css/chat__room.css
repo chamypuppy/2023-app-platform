@@ -1,0 +1,29 @@
+.time {
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+  margin-left: 25px;
+}
+
+.circle {
+  background-color: var(--color-strawberry);
+  border-radius: 50%;
+  width: 25px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.friends__profile--wrapper:hover {
+  cursor: pointer;
+  background-color: var(--color-pudding);
+}
+
+.friends__profile--wrapper:active {
+  background-color: var(--color-brown);
+  color: white;
+}
+
+.friends__profile--wrapper:active .status__message{
+  color: white;
+}

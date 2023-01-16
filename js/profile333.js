@@ -7,7 +7,7 @@ const groupWrapper = document.querySelector(".group__wrapper");
 /* HBD 접기 */
 function handleHidden() {
   setTimeout(function () {
-    hbdFriendsList.classList.add("hidden")
+    hbdFriendsList.classList.toggle("hidden");
     starWrapper.classList.add("category__up");
     groupWrapper.classList.add("category__up2");
   }, 200);
@@ -16,7 +16,7 @@ function handleHidden() {
   const categoryUp = starWrapper.classList.contains("category__up");
   if (hidden && categoryUp) {
     setTimeout(function () {
-      hbdFriendsList.classList.remove("hidden")
+      // hbdFriendsList.classList.remove("hidden")
       starWrapper.classList.remove("category__up");
       groupWrapper.classList.remove("category__up2");
       hbdFriendsList.classList.add("fade-out");
@@ -47,7 +47,7 @@ const starFriendsList = document.querySelector(".star__friends");
 
 function handleStar() {
   setTimeout(function () {
-    starFriendsList.classList.add("hidden");
+    starFriendsList.classList.toggle("hidden");
     // starWrapper.classList.add("category__up");
     groupWrapper.classList.add("category__up3");
   }, 200);
@@ -56,7 +56,7 @@ function handleStar() {
   const categoryUp3 = groupWrapper.classList.contains("category__up3");
   if (hidden && categoryUp3) {
     setTimeout(function () {
-      starFriendsList.classList.remove("hidden")
+      // starFriendsList.classList.remove("hidden")
       groupWrapper.classList.remove("category__up3");
       starFriendsList.classList.add("fade-out");
     }, 200);
@@ -100,8 +100,8 @@ starIcon.addEventListener("click", handleStar)
 // const HBD__Hidden = hbdFriendsList.classList.contains("hidden");
 // const STAR__Hidden = starFriendsList.classList.contains("hidden");
 
-// const categoryUp2 = document.querySelector(".category__up2");
-// const categoryUp3 = document.querySelector(".category__up3");
+const categoryUp2 = document.querySelector(".category__up2");
+const categoryUp3 = document.querySelector(".category__up3");
 
 // let frinedsCategoryIcon = document.querySelectorAll(".freinds__category--icon");
 
@@ -111,9 +111,9 @@ starIcon.addEventListener("click", handleStar)
 //   }
 // });
 
-// const GroupUp2 = groupWrapper.classList.contains(categoryUp2);
-// const GroupUp3 = groupWrapper.classList.contains(categoryUp3);
+const GroupUp2 = groupWrapper.classList.contains(categoryUp2);
+const GroupUp3 = groupWrapper.classList.contains(categoryUp3);
 
-// if(GroupUp2 && GroupUp3) {
-//   console.log(푸딩푸딩)
-// }
+if(GroupUp2 && GroupUp3) {
+  console.log(푸딩푸딩)
+}

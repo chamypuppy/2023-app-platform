@@ -38,6 +38,7 @@
 .my__name__message--wrapper {
   display: flex;
   flex-direction: column;
+  padding: 0 0 5px 0;
 }
 
 
@@ -124,7 +125,7 @@
 
 /* 3. HBD, STAR만 눌렀을 때) GROUP 카테고리 업! (진행중) */
 .category__up4 {
-  top: 180px;
+  top: 100px;
   animation: fadeInUp 0.5s;
 }
 
