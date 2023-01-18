@@ -5,4 +5,7 @@ const responseObj = {
   hey: "Hey! What's Up",
   today: new Date().toDateString(),
   time: new Date().toLocaleTimeString(),
+  현재시간: new Date().toLocaleTimeString(),
+  지금몇시야: new Date().toLocaleTimeString(),
+  /* 띄어쓰기를 하면 안 되는구나 */
 }
