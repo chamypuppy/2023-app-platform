@@ -15,6 +15,7 @@
 
 .state__chat--header {
   background-color: #0652c0;
+  background-color: var(--color-strawberry);
   color: #fff;
 }
 
@@ -61,7 +62,8 @@
   align-items: center;
   padding: 0 30px;
   /* padding: 5px 30px; */
-  background-color: #0652c0;
+  /* background-color: #0652c0; */
+  background-color: var(--color-strawberry);
   color: var(--light-color);
   font-size: 1.5rem;
   font-size: 1.4rem;
@@ -85,6 +87,8 @@
   flex-direction: column;
   align-items: flex-end;
   overflow-y: auto;
+  overflow: hidden;
+  position: relative;
 }
 
 .chat__input {
@@ -101,8 +105,6 @@
   
 }
 
-
-
 .input__sec {
   flex: 9;
 }
@@ -112,6 +114,14 @@
   padding-right: 4px;
   display: flex;
   justify-content: center;
+}
+
+.send i {
+  cursor: pointer;
+}
+
+.send i:hover {
+  color: var(--color-brown);
 }
 
 #chatbot-input {
@@ -128,15 +138,89 @@
 .chatbot-message,
 .user-message {
   padding: 8px;
-  background: #ccc;
+  /* background: #ccc; */
+  background: rgb(221, 221, 221);
   margin: 5px;
   width: max-content; /* 너비 최대 콘텐츠를 갖게 하는 */
   border-radius: 10px 3px 10px 10px;
 }
 
+.user-message {
+  transform: translate(50%);
+  opacity: 0;
+  animation: fade-in-right .3s ease-in-out both;
+}
+
 .chatbot-message {
   background-color: #0652c0;
+  background-color: var(--color-drak--strawberry);
   color: var(--light-color);
   align-self: flex-start;
   border-radius: 3px 10px 10px 10px;
+  transform: translate(-50%);
+  opacity: 0;
+  animation: fade-in-left .3s ease-in-out both;
+}
+
+.chat__body .loading {
+  display: flex;
+  position: absolute;
+  bottom: 5%;
+  left: 2%;
+  z-index: 999;
+}
+
+.chat__body .loading > .circle {
+  height: 20px;
+  width: 20px;
+  background-color: #0652c0;
+  margin: 5px;
+  border-radius: 50%;
+}
+
+.circle-1 {
+  animation: blink 1s ease-in-out 0ms both infinite;
+}
+
+.circle-2 {
+  animation: blink 1s ease-in-out 200ms both infinite;
+}
+
+.circle-3 {
+  animation: blink 1s ease-in-out 400ms both infinite;
+}
+
+@keyframes fade-in-right  {
+  0% {
+    transform: translate(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-left  {
+  0% {
+    transform: translate(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes blink  {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hide {
+  display: none !important;
 }

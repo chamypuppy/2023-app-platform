@@ -62,7 +62,10 @@ input {
 
 :root {
 	--color-brown: rgb(135, 107, 107);
-	--color-strawberry: rgb(255, 69, 69);
+	/* --color-strawberry: rgb(255, 69, 69); */
+	--color-strawberry: rgb(244, 124, 142);
+	/* --color-drak--strawberry: rgb(226, 59, 84); */
+	--color-drak--strawberry: rgb(245, 66, 93);
 	--color-pudding: rgb(255, 230, 170);
 	--a-style: rgb(0, 0, 0);
 }

@@ -20,3 +20,12 @@
   grid-template-rows: 100px 100px 100px 100px;
   margin: 100px 15px;
 }
+
+.protect__item:hover {
+  background-color: var(--color-pudding);
+}
+
+.protect__item:active {
+  background-color: var(--color-brown);
+  color: white;
+}

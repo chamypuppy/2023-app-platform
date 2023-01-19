@@ -39,9 +39,9 @@ const renderMessageEle = (txt, type) => {
 }
 
 const getChatbotResponse = (userInput) => {
-  return responseObj[userInput] == undefined ?
-    "Please trying something else" :
-    responseObj[userInput];
+  return responseObj[userInput] == undefined 
+  ? "Please trying something else" 
+  :  responseObj[userInput];
 }
 
 const setScrollPosition = () => {

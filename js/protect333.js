@@ -1,7 +1,9 @@
 let items = document.getElementsByClassName("protect__item");
 
 for (let i = 0; i < items.length; i++) {
-  items[i].style.border = "1px solid blue";
+  // items[i].style.border = "1px solid blue";
+  // items[i].style.border = "1px solid gray";
+  items[i].style.border = "1px solid white";
 
   let clickCount = 0;
 
