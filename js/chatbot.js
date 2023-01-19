@@ -40,7 +40,8 @@ const renderMessageEle = (txt, type) => {
 
 const getChatbotResponse = (userInput) => {
   return responseObj[userInput] == undefined 
-  ? "Please trying something else" 
+  // ? "Please trying something else" 
+  ? "미안해. 잘 알아듣지 못했어😅" 
   :  responseObj[userInput];
 }
 
