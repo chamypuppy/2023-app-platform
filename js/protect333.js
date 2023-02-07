@@ -11,7 +11,7 @@ for (let i = 0; i < items.length; i++) {
     console.log(items[i]);
     clickCount += 1;
     console.log(clickCount);
-    if (items[i].value == 0 && clickCount < 5) {
+    if (items[i].value == 0 && clickCount == 4) {
       location.href = "home.html"
     } else {
       // alert("비밀번호 오류입니다")
